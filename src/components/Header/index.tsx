@@ -1,4 +1,5 @@
 
+import { SignInButton } from './SignInButton'
 import styles from './styles.module.scss'
 
 export default function Header () {
@@ -7,9 +8,11 @@ export default function Header () {
             <div className={styles.headerContent}>
                 <h4>IgNews</h4>
                 <nav>
-                    <a>Home</a>
+                    <a className={styles.active}>Home</a>
                     <a>Post</a>
                 </nav>
+
+                <SignInButton />
             </div>
         </header>
     )
